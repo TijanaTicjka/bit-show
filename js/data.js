@@ -1,5 +1,4 @@
 "use strict";
-
 const dataModule =(function() {
   class TvShow {
     constructor(id, name, rating, image) {

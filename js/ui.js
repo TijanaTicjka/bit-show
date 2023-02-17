@@ -12,12 +12,8 @@ const uiModule =(function() {
             mainRow.innerHTML += divShow;
         });
     }
-
-
     return {
         renderHomePage,
-      
-       
        
     }
 })()

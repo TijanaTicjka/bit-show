@@ -6,6 +6,4 @@
     
   
       
-      
-    
 })(dataModule,uiModule)
