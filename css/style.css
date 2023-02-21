@@ -14,17 +14,45 @@
   width: 13em;
 }
 
-.img-fluid {
-  height: 30em;
-  width: 80%;
-}
-
 .card {
   --bs-card-border-color:none;
 }
 
-.col-md-5 {
-  height: 30em;
+@media screen and (max-width: 2560px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .list-group {
+    max-height: 500px;
+    font-size: 0.9rem;
+  }
+  .col-md-6 {
+    max-height: 100%;
+  }
+  .list-group-item {
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .card {
+    --bs-card-spacer-x: 0rem;
+  }
+  .img-fluid {
+    max-height: 900px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .list-group-item {
+    font-size: 0.8rem;
+    --bs-list-group-item-padding-y: 0rem;
+    --bs-body-line-height: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .list-group-item {
+    font-size: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

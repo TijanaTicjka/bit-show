@@ -41,14 +41,11 @@
     ui.clearMain()
   })
 
-  // const link = mainRow.getElementsByTagName("a");
-  // console.log(link);
-
-  // mainRow.addEventListener("click", (event) => {
-  //     const element = event.target.value;
-  //     console.log(element.id);
-  //     data.getDetailedShow(element.id);
-     
-  // })
+  mainRow.addEventListener("click", (event) => {
+    const element = event.target;
+    //console.log(element.id);
+    data.getDetailedShow(element.id).then(res =>
+      ui.fillShowInfoPage(res));
+  })
   
 })(dataModule,uiModule)
