@@ -9,19 +9,14 @@ const dataModule =(function() {
     }
   }
 
-  class DetailedShow extends TvShow {
-    constructor(name,id, image, castList, seasonsList, description) {
-      super(name,id,image);
+  class DetailedShow {
+    constructor(name, id, image, castList, seasonsList, description){
+      this.name = name;
+      this.id = id;
+      this.image = image;
       this.castList = castList;
       this.seasonsList = seasonsList;
       this.description = description
-    }
-  }
-
-  class Season {
-    constructor(startDate, endDate) {
-      this.startDate = startDate,
-      this.endDate = endDate
     }
   }
 
@@ -57,7 +52,7 @@ const dataModule =(function() {
         return res.json();
       })
       .then(function (show) {
-        const imageToUse = show.image ? show.image.original : '';
+        const imageToShow = show.image ? show.image.original : "";
         const seasons = [];
         const cast = [];
         const summary = show.summary;
@@ -71,15 +66,15 @@ const dataModule =(function() {
             cast.push(person.name);
         });
 
-        return new DetailedShow(show.name, show.id, imageToUse, seasons, cast.slice(0, 7), summary)
+      return new DetailedShow(show.name, show.id, imageToShow, cast.slice(0, 7), seasons, summary);
+  
     })
-}
+  }
 
   return {
     getShows,
     searchShow,
     getDetailedShow 
-    
   }
 
 })()

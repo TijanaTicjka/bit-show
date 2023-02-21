@@ -8,6 +8,9 @@
   getData();
 
   const searchInput = document.querySelector(".searchField");
+  const resultsList = document.querySelector(".results");
+  const home = document.getElementById("home");
+  const mainRow = document.querySelector("#mainRow");
   
   searchInput.addEventListener("keyup", event => {
     const searchTerm = event.target.value;
@@ -20,18 +23,32 @@
     ui.showDropDown();
   })
 
-  const resultsList = document.querySelector(".results");
-  resultsList.addEventListener("click", function (event) {
+  resultsList.addEventListener("click", event => {
     const selectedElement = event.target;
     const idShow = selectedElement.id;
     //console.log(idShow);
     ui.clearMain()
-    const detailsOfShow = data.getDetailedShow(idShow).then(res => ui.fillShowInfoPage(res));
+    const detailsOfShow = data.getDetailedShow(idShow).then(res =>
+       ui.fillShowInfoPage(res));
     ui.clearList();
     ui.clearInput();
     ui.showDropDown()
-   
   })
 
+  home.addEventListener("click", () => {
+    getData();
+    ui.fixMainTitle();
+    ui.clearMain()
+  })
+
+  // const link = mainRow.getElementsByTagName("a");
+  // console.log(link);
+
+  // mainRow.addEventListener("click", (event) => {
+  //     const element = event.target.value;
+  //     console.log(element.id);
+  //     data.getDetailedShow(element.id);
+     
+  // })
   
 })(dataModule,uiModule)

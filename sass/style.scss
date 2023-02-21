@@ -9,7 +9,17 @@
     display: none;
     z-index: 999;
     overflow-y: auto;
-    width: 12.8em;
+    width: 13em;
+}
+.img-fluid{
+    height:30em;
+    width: 80%;
+}
+.card{
+    --bs-card-border-color:none;
+}
+.col-md-5{
+    height: 30em;
 }
 
 
