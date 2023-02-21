@@ -6,4 +6,12 @@
   width: 80%;
 }
 
+.results {
+  position: absolute;
+  display: none;
+  z-index: 999;
+  overflow-y: auto;
+  width: 12.8em;
+}
+
 /*# sourceMappingURL=style.css.map */

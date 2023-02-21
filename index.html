@@ -9,18 +9,18 @@
   </head>
   <body>
     <header>
-        <nav class="navbar bg-dark" data-bs-theme="dark">
-          <div class="container-fluid gx-0 d-flex justify-content-around">
-            <a href="#" class="navbar-brand">BitShow</a>
-            <form class="d-flex" role="search">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            </form>
+      <nav class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid gx-0 d-flex justify-content-around">
+          <a href="#" class="navbar-brand">BitShow</a>
+          <div class="dropdown">
+              <input class="form-control searchField dropdown-toggle" type="text" placeholder="Search" id="search-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <ul class="results dropdown-menu" aria-labelledby="search-dropdown"></ul>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
-  </div>
     <section>
-      <h1 class="text-center m-3">Popular Shows</h1>
+      <h1 id="first" class="text-center m-3">Popular Shows</h1>
       <div class="container d-flex justify-content-center main">
         <div class="row d-flex justify-content-center gap-3" id="mainRow"></div>
       </div>
