@@ -45,7 +45,12 @@
     const element = event.target;
     //console.log(element.id);
     data.getDetailedShow(element.id).then(res =>
-      ui.fillShowInfoPage(res));
+    ui.fillShowInfoPage(res));
+  })
+  
+  window.addEventListener("click", () => {
+    ui.clearInput();
+    ui.showDropDown();
   })
   
 })(dataModule,uiModule)

@@ -8,10 +8,10 @@ const uiModule =(function() {
 
     const renderHomePage  = function (arr) {
         arr.forEach(element => {
-            let divShow = `<div class="card pt-3 shadow-lg p-3 mb-5 bg-body rounded text-center" style="width: 18rem;">
-            <img src=${element.image} class="card-img-top img-thumbnail" id="${element.id}"alt="...">
+            let divShow = `<div class=" animation card pt-3 shadow-lg p-3 mb-5 bg-body rounded text-center animate__animated animate__pulse" style="width:18rem;">
+            <img src=${element.image} class="card-img-top img-thumbnail" alt="...">
             <div class="card-body">
-              <a href="" id="${element.id}" class="card-lin text-decoration-none"><h5 class="card-title">${element.name}</h5></a>
+              <h5 id=${element.id} class="card-title text-primary">${element.name}</h5>
             </div>
             </div>`
             mainRow.innerHTML += divShow;

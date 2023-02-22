@@ -2,6 +2,10 @@
   height: 80%;
 }
 
+section {
+  padding-top: 3rem;
+}
+
 .main {
   width: 80%;
 }
@@ -16,8 +20,28 @@
 
 .card {
   --bs-card-border-color:none;
+  cursor: pointer;
 }
 
+.btn-outline-primary {
+  --bs-btn-border-color: none;
+}
+
+.animation:hover {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (max-width: 2560px) {
   .card-title {
     font-size: 1.5rem;
