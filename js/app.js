@@ -36,16 +36,15 @@
   })
 
   home.addEventListener("click", () => {
-    getData();
-    ui.fixMainTitle();
     ui.clearMain()
+    ui.fixMainTitle();
+    getData()
   })
 
   mainRow.addEventListener("click", (event) => {
     const element = event.target;
-    //console.log(element.id);
-    data.getDetailedShow(element.id).then(res =>
-    ui.fillShowInfoPage(res));
+    if(element.id) {
+      data.getDetailedShow(element.id).then(res =>ui.fillShowInfoPage(res))}
   })
   
   window.addEventListener("click", () => {

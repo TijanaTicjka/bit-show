@@ -20,6 +20,21 @@ section {
 
 .card {
   --bs-card-border-color:none;
+}
+
+.col-md-12 {
+  cursor: default;
+}
+
+footer {
+  cursor: default;
+}
+
+h1 {
+  cursor: default;
+}
+
+.card h6 {
   cursor: pointer;
 }
 

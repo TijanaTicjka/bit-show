@@ -11,7 +11,7 @@ const uiModule =(function() {
             let divShow = `<div class=" animation card pt-3 shadow-lg p-3 mb-5 bg-body rounded text-center animate__animated animate__pulse" style="width:18rem;">
             <img src=${element.image} class="card-img-top img-thumbnail" alt="...">
             <div class="card-body">
-              <h5 id=${element.id} class="card-title text-primary">${element.name}</h5>
+              <h6 id=${element.id} class="card-title text-primary">${element.name}</h6>
             </div>
             </div>`
             mainRow.innerHTML += divShow;
@@ -67,17 +67,15 @@ const uiModule =(function() {
             const element = casts[index];
             colomsForDetails += `<li class="list-group-item">${element}</li>`
         };
-        colomsForDetails += `</ul>
+        colomsForDetails += `</ul> 
         </div>
         </div>
-          <div class="col-md-12 px-2">
+        <div class="col-md-12 px-2">
           <h5 class="mt-3">Show Details</h5>
           <p>${show.description}</p></div>
         </div>
         </div>
-      </div>`
-       
-        mainRow.style.width="90%";
+        </div>`
         mainRow.innerHTML = colomsForDetails;
     }
 
