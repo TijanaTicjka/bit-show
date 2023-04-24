@@ -47,7 +47,7 @@ const dataModule =(function() {
   }
 
   const getDetailedShow = (id) => {
-    return fetch(`http://api.tvmaze.com/shows/${id}?embed[]=seasons&embed[]=cast`)
+    return fetch(`https://api.tvmaze.com/shows/${id}?embed[]=seasons&embed[]=cast`)
       .then(function (res) {
         return res.json();
       })
