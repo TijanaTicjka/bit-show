@@ -16,7 +16,12 @@ Bit Show is a single-page web application that allows users to browse and search
 
 ### Technologies Used
 
-HTML Bootstrap CSS JavaScript Fetch API TVmaze API
+- HTML
+- Bootstrap
+- CSS
+- JavaScript
+- Fetch API
+- TVmaze API
 
 ### Deployment
 
