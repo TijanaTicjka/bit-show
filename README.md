@@ -25,6 +25,6 @@ Bit Show is a single-page web application that allows users to browse and search
 
 ### Deployment
 
-The project has been deployed on Netlify and is accessible at the following URL:
+The project is deployed and can be accessed [here](https://tijanamilenkovic-bit-show.netlify.app).
 
-https://tijanamilenkovic-bit-show.netlify.app
+
